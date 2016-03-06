@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Tests Front avec AngularJS</title>
+</head>
+<body ng-app="app">
+	<!-- Libs -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+	<script type="text/javascript" src="bower_components/restangular/dist/restangular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<div ui-view></div>
+
+	<!-- App -->
+	<script type="text/javascript" src="app/app.module.js"></script>
+
+	<script type="text/javascript" src="app/common/filters.js"></script>
+	
+	<script type="text/javascript" src="app/todo-list/js/todo-list.module.js"></script>
+	<script type="text/javascript" src="app/todo-list/js/todo-list.ctrl.js"></script>
+	<script type="text/javascript" src="app/todo-list/js/todo-list.svc.js"></script>
+	<script type="text/javascript" src="app/todo-list/js/todo-list.da.js"></script>
+	<script type="text/javascript" src="app/todo-list/js/todo-element.dir.js"></script>
+</body>
+</html>

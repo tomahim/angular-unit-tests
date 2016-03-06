@@ -1,0 +1,18 @@
+{
+  "name": "tests-angular",
+  "version": "0.0.0",
+  "description": "Exemples de tests unitaires côté front avec AngularJS",
+  "authors": [
+    "Thomas Himblot"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "restangular": "~1.5.1",
+    "lodash": "~3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.x",
+    "angular-ui-router": "~0.2.18"
+  }
+}

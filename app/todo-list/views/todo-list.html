@@ -1,0 +1,38 @@
+<div class="col-md-12">
+	<h3>Todo list</h3>
+
+	<div class="col-md-3">
+		<input class="form-control" placeholder="Recherche..." ng-model="vm.search"></input>
+	</div>
+
+	<div style="clear:both"></div>
+	<br>
+	<br>
+
+	<table class="table table-striped">
+      <tr>
+      	<th>ID</th>
+      	<th>Tâche</th>
+      	<th>Action</th>
+      </tr>
+	  <tr ng-repeat="task in vm.tasksList | filter : vm.search track by $index">
+		<td>{{task.id}}</td>
+		<td>{{task.nom}}</td>
+		<td>
+			<div class="btn btn-danger" ng-click="vm.removeTask(task)">
+				Supprimer
+			</div>
+	  </tr>
+	  <tr>
+	  	<td></td>
+	  	<td>
+	  		<input class="form-control" placeholder="Saisissez un nom..." ng-model="vm.newTask.nom"></input>
+	  	</td>
+	  	<td>
+	  		<div class="btn btn-success" ng-click="vm.addTask(vm.newTask)">
+	  			Ajouter une tâche
+	  		</div>
+	  	</td>
+	  </tr>
+	</table>
+</div>
