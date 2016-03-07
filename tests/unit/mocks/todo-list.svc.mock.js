@@ -14,7 +14,9 @@
 
     function TodoListSvcMock($q) {
         var service = {
-            getTodoList: getTodoList
+            getTodoList: getTodoList,
+            addTask : addTask,
+            removeTask : removeTask
         };
 
         var mockTasks = [{
@@ -30,6 +32,18 @@
         function getTodoList() {
             var defer = $q.defer();
             defer.resolve(mockTasks);
+            return defer.promise;
+        }
+
+        function addTask(task) {
+            var defer = $q.defer();
+            defer.resolve(task);
+            return defer.promise;
+        }
+
+        function removeTask(task) {
+            var defer = $q.defer();
+            defer.resolve(task);
             return defer.promise;
         }
     }

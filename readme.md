@@ -12,7 +12,7 @@ gulp serve
 
 gulp test
 
-## Bonnes pratiques 
+## Bonnes pratiques
 
 Une application Angular est facilement testable :
 
@@ -31,5 +31,5 @@ Une application Angular est facilement testable :
 		- Tester un service
 		- Tester une directive
 		- Tester un filter
-	
+
 	- Gérer les mocks
